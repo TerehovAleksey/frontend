@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Главная — Venom 2</title>
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#000000">
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="blood">
+  <div class="container">
+    <header class="header">
+      <a href="/" class="logo-link">
+        <img width="46" height="71" src="img/logo.png" alt="logo: venom" class="logo-image" />
+      </a>
+      <nav class="nav">
+        <button class="menu-button">
+          <span class="menu-button-text">меню</span>
+          <img src="img/menu.svg" alt="icon: burger menu" class="menu-button-icon" />
+        </button>
+        <button class="menu-button-close">
+          <span class="menu-button-text">закрыть</span>
+          <img src="img/arrow.svg" alt="icon: burger menu" class="menu-button-icon" />
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-menu-item">
+            <a href="about.html" class="nav-menu-link">о фильме</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="trailer.html" class="nav-menu-link">трейлер</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="actors.html" class="nav-menu-link">актеры</a>
+          </li>
+          <li class="nav-menu-item">
+            <a href="premier.html" class="nav-menu-link">премьера</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="film">
+      <div class="film-text">
+        <span class="film-date">16 сентября 2021</span>
+        <img src="img/venom-2.svg" alt="logo: venom-2" class="film-logo" />
+        <p class="film-description">
+          В настырном журналисте по-прежнему живет симбиот. Том Харди в образе обаятельного суперзлодея из комиксов
+          Marvel.
+        </p>
+      </div>
+      <!-- /.film-text -->
+      <div class="button-group">
+        <a data-fancybox href="https://www.youtube.com/watch?v=kOF4p_bCLJs" class="button button-primary">
+          <img width="15" src="img/play.svg" alt="icon: play" class="button-icon" />
+          <span class="button-text">смотреть трейлер</span>
+        </a>
+        <a href="trailer.html" class="button button-link">
+          <img width="15" src="img/ticket.svg" alt="icon: Ticket" class="button-icon" />
+          <span class="button-text">билеты на премьеру</span>
+        </a>
+      </div>
+      <!-- /.button-group -->
+    </div>
+    <!-- /.film -->
+  </div>
+  <!-- /.container -->
+
+  <img src="img/venom.png" alt="photo: venom" class="venom" />
+
+  <div class="hide-form">
+    <button class="order-trigger">
+      — И куда едем?
+    </button>
+    <div class="order-ticket">
+      <form class="order-ticket__form">
+        <fieldset class="order-ticket__form-wrapper">
+          <legend class="order-ticket__title">Заполните форму</legend>
+          <small class="order-ticket__description">И получите на почту расписание ближайших сеансов в вашем городе и возможные акции</small>
+          <label class="order-ticket__label">
+            <input class="order-ticket__input" type="text" required name="name">
+            <span class="order-ticket__label-text">Имя</span>
+          </label>
+          <label class="order-ticket__label">
+            <input class="order-ticket__input" type="text" name="surname">
+            <span class="order-ticket__label-text">Фамилия</span>
+          </label>
+          <label class="order-ticket__label">
+            <input class="order-ticket__input" type="text" required name="city">
+            <span class="order-ticket__label-text">Город</span>
+          </label>
+          <label class="order-ticket__label">
+            <input class="order-ticket__input" type="email" required name="mail">
+            <span class="order-ticket__label-text">e-mail</span>
+          </label>
+          <label class="order-ticket__label">
+            <input class="order-ticket__checkbox" type="checkbox" required name="personal" value="agree">
+            <span class="order-ticket__label-checkbox-text">Я согласен на обработку моих <a href="#">персональных данных</a></span>
+          </label>
+          <button>Отправить</button>
+        </fieldset>
+        <div class="order-ticket__preloader-wrapper">
+          <video loop muted autoplay playsinline src="img/6.mp4" type="video/mp4"></video>
+        </div>
+        <fieldset class="order-ticket__thanks-wrapper">
+          <legend>Спасибо <span class="order-ticket__thanks-name">-имя-</span></legend>
+          <p>Вам на почту в скором времени будет отправлено письмо с расписание сеансов в вашем городе</p>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
