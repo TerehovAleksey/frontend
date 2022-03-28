@@ -19,4 +19,4 @@
 - 09-IndexEda
     ![image info](./09-index-eda/screenshot.png)
 - 10-Pc Help
-    ![image info](./10-pc-help/screenshot.png)
+    ![image info](./10-pc-help/Screenshot.png)
