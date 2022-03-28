@@ -1,4 +1,4 @@
-### Вёрстка, слайдеры, анимации и прочее. И JS, который втавляется туда, куда был изобретён.
+### Вёрстка, слайдеры, анимации и прочее.
 
 - 01-Cards
   ![image info](./01-cards/screenshot.png)
@@ -18,3 +18,5 @@
     ![image info](./08-melody/screenshot.png)
 - 09-IndexEda
     ![image info](./09-index-eda/screenshot.png)
+- 10-Pc Help
+    ![image info](./10-pc-help/screenshot.png)
